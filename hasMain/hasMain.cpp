@@ -23,7 +23,7 @@ int main() {
 
 
 
-  GeographicLib::Geoid g("egm2008-1","C:\\source\\GeoTest\\runFolder");
+  GeographicLib::Geoid g("egm2008-1","C:\\source\\Geographic-Library-Test\\runFolder");
   double lat=45.5, lon=-75.5;
   
     for (lon = -70.0; lon < 80.0; lon += 1)
@@ -34,7 +34,7 @@ int main() {
 
     try 
     {
-        MagneticModel mag("wmm2025", "C:\\source\\GeoTest\\runFolder");
+        MagneticModel mag("wmm2025", "C:\\source\\Geographic-Library-Test\\runFolder");
         double lat = 45.5, lon = -75.5, h = 10, t = 2026; // Mt Everest
         double Bx, By, Bz;
         mag(t, lat, lon, h, Bx, By, Bz);
